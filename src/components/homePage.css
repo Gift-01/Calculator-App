@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-container {
+  width: 414px;
+  background-color: #fff;
+  border: 1px solid white;
+  padding: 32px 15px;
+}
+.input-wrapper {
+  height: 250px;
+  background-color: #e5e5e5;
+  border-radius: 43px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+  text-align: right;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.button-container {
+  display: flex;
+  margin-top: 20px !important;
+  justify-content: center;
+}
+.button button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #353742;
+  color: #fff;
+  font-size: 48px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+}
+.button button:hover {
+  background-color: #b6b6b6 !important;
+}
+.left-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 5px;
+  column-gap: 10px;
+  width: 75%;
+}
+.right-button {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  margin-left: 25px;
+  width: 25%;
+}
+.big-button {
+  color: #fff !important ;
+  background-color: #ff806e !important;
+  border-radius: 35px !important;
+  width: 75px !important;
+  height: 145px !important;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+}
+.small-button {
+  color: #ff806e !important;
+}
+.medium-btn {
+  background-color: #ff806e !important;
+}
+@media (max-width: 540px) {
+  .main-container {
+    width: 90%;
+    padding: 10px 10px;
+  }
+  .input-wrapper {
+    height: 200px;
+  }
+  .left-button {
+    row-gap: 5px;
+    width: 65%;
+  }
+  .right-button {
+    row-gap: 7px;
+    width: 20%;
+  }
+  .button button {
+    width: 55px;
+    height: 55px;
+  }
+  .big-button {
+    width: 60px !important;
+    height: 130px !important;
+  }
+}
+@media (max-width: 380px) {
+  .input-wrapper {
+    height: 150px;
+  }
+  .buttton-container {
+    margin-top: 10px;
+    height: 48.5%;
+  }
+  .button button {
+    width: 45px;
+  }
+  .big-button {
+    width: 65px !important;
+    height: 115px !important;
+  }
+}
+@media (max-width: 280px) {
+  .left-button {
+    column-gap: 8px;
+  }
+  .main-container {
+    padding: 20px 7px;
+  }
+  .input-wrapper {
+    height: 110px;
+  }
+  .big-button {
+    width: 47px !important;
+    height: 125px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .main-container {
+    padding: 10px 15px;
+  }
+  .container {
+    height: 100vh;
+  }
+  .button button {
+    width: 65px;
+    height: 68px;
+  }
+  .input-wrapper {
+    height: 130px;
+  }
+  .button-container {
+    margin-top: 15px !important;
+  }
+}
