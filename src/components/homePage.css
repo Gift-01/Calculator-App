@@ -8,7 +8,8 @@
   width: 414px;
   background-color: #fff;
   border: 1px solid white;
-  padding: 32px 15px;
+  padding: 15px 15px;
+  border-radius: 46px;
 }
 .input-wrapper {
   height: 250px;
