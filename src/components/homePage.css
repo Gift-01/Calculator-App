@@ -21,6 +21,14 @@
   justify-content: flex-end;
   padding: 20px;
 }
+.result {
+  overflow: scroll;
+}
+
+.result h1 {
+  font-size: 25px;
+}
+
 .button-container {
   display: flex;
   margin-top: 20px !important;
