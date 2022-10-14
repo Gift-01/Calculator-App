@@ -3,14 +3,20 @@ import "./homePage.css";
 import Button from "./button.jsx";
 import Input from "./input.jsx";
 import { useState } from "react";
-import * as math from "mathjs";
 
 const HomePage = () => {
-  const [text, setText] = useState("");
+  const [text, setText] = useState([]);
   const [result, setResult] = useState("");
 
+  const symbols = ["*", ".", "%", "+", "-", "/"];
+
   const addToText = (val) => {
-    setText((text) => [...text, val]);
+    if (
+      (symbols.includes(val) && !symbols.includes(text[text.length - 1])) ||
+      !symbols.includes(val)
+    ) {
+      setText((text) => [...text, val]);
+    }
   };
 
   const reset = () => {
@@ -23,8 +29,16 @@ const HomePage = () => {
   };
 
   const total = () => {
-    const input = text.join("");
-    setResult(math.evaluate(input));
+    if (text !== []) {
+      if (!symbols.includes(text[text.length - 1])) {
+        const input = text.join("");
+        setResult(eval(input));
+      } else {
+        text.pop();
+        const input = text.join("");
+        setResult(eval(input));
+      }
+    }
   };
 
   return (
