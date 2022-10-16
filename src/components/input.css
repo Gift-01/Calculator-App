@@ -23,6 +23,7 @@
 .result h1 {
   font-size: 25px;
   font-weight: 800;
+  word-break:break-all;
 }
 .text{
   flex:1;
